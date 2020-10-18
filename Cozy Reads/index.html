@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html ng-app="CozyReadsApp">
+
+<head>
+    <meta charset="utf-8" />
+    <title>AngularJS Homework</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script>
+        document.write('<base href="' + document.location + '" />');
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <info>
+    </info>
+    <div class="service" ng-controller="CozyReadsAddController as itemAdder">
+        <input type="text" ng-model="itemAdder.itemBookName" placeholder="Book name" />
+        <input type="text" ng-model="itemAdder.itemAuthor" placeholder="Author" />
+        <input type="text" ng-model="itemAdder.itemRent" placeholder="Rent" />
+        <button ng-click="itemAdder.addItem();">Add Book to List</button>
+    </div>
+    <div class="filter" ng-controller="CozyReadsShowController as showList">
+        <ol>
+            <li ng-repeat="item in showList.items">
+                 {{ item.name }} by {{ item.Author }}. Rent = Rs{{ item.Rent }}
+                <button ng-click="showList.removeItem($index);">Remove Item</button>
+            </li>
+        </ol>
+        <h1>Filter</h1>
+        <input type="text" ng-model="search" placeholder="Book name" />
+        <button>Search Book</button>
+        <ol>
+            <li ng-repeat="item in showList.items | filter : {BookName : search}">
+                {{ item.name }} by {{ item.Author }}. Rent = Rs{{ item.Rent }}
+            </li>
+        </ol>
+        <h1>Sort By</h1>
+        <select name="sorting" ng-model="value">
+            <option value="Book Name">Book Name</option>
+            <option value="Author">Author</option>
+            <option value="Rent">Rent</option>
+        </select>
+        <button>Sort</button>
+        <ol>
+            <li ng-repeat="item in showList.items | orderBy : value">
+                {{ item.name }} by {{ item.Author }}. Rent = Rs{{ item.Rent }}
+            </li>
+        </ol>
+        <footer>
+            {{ textval }}
+        </footer>
+    </div>
+</body>
+
+</html>

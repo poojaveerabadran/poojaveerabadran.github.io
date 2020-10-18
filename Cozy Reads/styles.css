@@ -1,0 +1,17 @@
+body {
+    background-image: url("background.jpg");
+  }
+.service h1{
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+  }
+button{
+    font-family: 'Poppins', sans-serif;
+  }
+:placeholder-shown{
+    font-family: 'Poppins', sans-serif;
+  }
+info{
+  font-family: 'Poppins', sans-serif;
+      text-align: center;
+}

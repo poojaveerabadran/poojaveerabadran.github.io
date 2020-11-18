@@ -1,0 +1,45 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT book (book1,book2,book3)>
+<!ATTLIST book
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT book1 (name,author,description,owner,address,rent)>
+<!ATTLIST book1
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT book2 (name,author,description,OWNER,address,rent)>
+<!ATTLIST book2
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT book3 (name,author,description,owner,rent,address)>
+<!ATTLIST book3
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT OWNER (#PCDATA)>
+<!ATTLIST OWNER
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT name (#PCDATA)>
+<!ATTLIST name
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT author (#PCDATA)>
+<!ATTLIST author
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT description (#PCDATA)>
+<!ATTLIST description
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT owner (#PCDATA)>
+<!ATTLIST owner
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT address (#PCDATA)>
+<!ATTLIST address
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT rent (#PCDATA)>
+<!ATTLIST rent
+  xmlns CDATA #FIXED ''>

@@ -1,0 +1,9 @@
+{
+   "maink": {
+      "appname": "COZY READS",
+      "description": "This is a place where you greatest passion for reading comes true.Here you can find your favourite books without buying it and read it without uch costs.",
+      "rent": "min Rs75 max Rs120",
+      "duration": "min 5 days max 16 days",
+      "location": "No Constraint"
+   }
+}

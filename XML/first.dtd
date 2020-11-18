@@ -1,0 +1,29 @@
+\<?xml encoding="UTF-8"?>
+
+<!ELEMENT home (maink)>
+<!ATTLIST home
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT maink (appname,description,rent,duration,location)>
+<!ATTLIST maink
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT appname (#PCDATA)>
+<!ATTLIST appname
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT description (#PCDATA)>
+<!ATTLIST description
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT rent (#PCDATA)>
+<!ATTLIST rent
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT duration (#PCDATA)>
+<!ATTLIST duration
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT location (#PCDATA)>
+<!ATTLIST location
+  xmlns CDATA #FIXED ''>

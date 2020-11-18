@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+
+<html>
+<body  style="background-color:#b3d9ff">
+<h2 style="font-weight: bold;"><strong>The Highest paid Book here is:</strong></h2>
+<p style="font-weight: bold; font-size: 30px" id="demo"></p>
+<p style="font-weight: bold; font-size: 30px" id="demo1"></p>
+<script>
+var parser, xmlDoc;
+var text = "<high><book>" +
+"<name>HarryPotter</name>" +
+"<name>Ponniyin Selvan</name>" +
+"<rent>150</rent>" +
+"</book></high>";
+
+
+parser = new DOMParser();
+xmlDoc = parser.parseFromString(text,"text/xml");
+
+document.getElementById("demo").innerHTML =
+xmlDoc.getElementsByTagName("name")[0].childNodes[0].nodeValue;
+document.getElementById("demo1").innerHTML =
+xmlDoc.getElementsByTagName("name")[1].childNodes[0].nodeValue;
+</script>
+
+</body>
+</html>

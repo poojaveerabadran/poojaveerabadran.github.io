@@ -1,0 +1,44 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="book">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="book1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="name"/>
+              <xs:element type="xs:string" name="author"/>
+              <xs:element type="xs:string" name="description"/>
+              <xs:element type="xs:string" name="owner"/>
+              <xs:element type="xs:string" name="address"/>
+              <xs:element type="xs:byte" name="rent"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="book2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="name"/>
+              <xs:element type="xs:string" name="author"/>
+              <xs:element type="xs:string" name="description"/>
+              <xs:element type="xs:string" name="OWNER"/>
+              <xs:element type="xs:string" name="address"/>
+              <xs:element type="xs:byte" name="rent"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="book3">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="name"/>
+              <xs:element type="xs:string" name="author"/>
+              <xs:element type="xs:string" name="description"/>
+              <xs:element type="xs:string" name="owner"/>
+              <xs:element type="xs:byte" name="rent"/>
+              <xs:element type="xs:string" name="address"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

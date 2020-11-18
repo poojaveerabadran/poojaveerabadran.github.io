@@ -1,0 +1,26 @@
+{
+   "book1": {
+      "name": "HARRY POTTER",
+      "author": "J.K.Rowling",
+      "description": "If you wanna leave the reality and jump into the world of magic?? then without a second thought start reading this book",
+      "owner": "PoojaShri",
+      "address": "THIUPARANGUNDRAM",
+      "rent": "120"
+   },
+   "book2": {
+      "name": "UNCONDITIONALLY",
+      "author": "MAY",
+      "description": "A story which portrays even if you are from a completely different world if right people are around you there is nothing called lonleiness",
+      "OWNER": "MADURAI",
+      "address": "ByeepassRoad Kalavasal",
+      "rent": "100"
+   },
+   "book3": {
+      "name": "Let us C",
+      "author": "Yashavant",
+      "description": "It is very useful for those who want to learn every single details about the C programming language.",
+      "owner": "Rajangam",
+      "rent": "80",
+      "address": "MAIN ROAD MADURAI"
+   }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   
+    <style>
+
+        h1 {
+            font-size: 80px;
+            color: black;
+            font-family: 'San-Serif';
+            text-align: center;
+        }
+
+        h2 {
+            font-family: 'Times New Roman', cursive;
+            color: brown;
+            font-size: 45px;
+            padding-left: 90px;
+        }
+
+        ul {
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            padding-left: 150px;
+        }
+
+        .container {
+            margin-left: 0px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Information about books</h1><br><br>
+    <h2>Book Names and Availability</h2>
+    <ul id="categoryInfo"></ul><br><br>
+    <div class="container">
+        <h2>Available to Rent or Not</h2>
+        <ul id="statusInfo"></ul>
+    </div>
+    <script>
+        var text = '{ "category": [ { "name": "Harry Potter", "Available": "4" }, { "name": "Ponnitin Selvan", "Available": "6" }, { "name": "The Hunger Games", "Available": "2" } ], "status": [ { "Rent": "yes", "cost": "120" }, { "type": "Not now", "count": "3" } ] }';
+
+        obj = JSON.parse(text);
+        document.getElementById("categoryInfo").innerHTML = "<li>" +
+            obj.category[0].name + " - " + obj.category[0].Available + "</li> <li>" +
+            obj.category[1].name + " - " + obj.category[1].Available + "</li> <li>" +
+            obj.category[2].name + " - " + obj.category[2].Available + "</li>";
+        document.getElementById("statusInfo").innerHTML = "<li>" +
+            obj.status[0].Rent + " - " + obj.status[0].cost + "</li> <li>" +
+            obj.status[1].type + " - " + obj.status[1].count + "</li>";
+    </script>
+</body>
+
+</html>

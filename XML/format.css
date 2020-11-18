@@ -1,0 +1,27 @@
+
+home
+ {background-color:   #66ffff;
+  font-family: 'Roboto', sans-serif;
+} 
+home description{
+  word-break: break-all;
+}
+book name{
+  font-weight: bold;
+}
+book author{
+  font-family: 'Dancing Script', cursive;
+}
+book owner{
+  font-family: 'Caveat', cursive;
+}
+book
+ {background-color:    #4dd2ff;
+  font-family: 'Roboto', sans-serif;
+} 
+appname
+{
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}

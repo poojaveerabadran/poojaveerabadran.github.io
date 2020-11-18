@@ -1,0 +1,31 @@
+<?xml version = "1.0" encoding = "UTF-8" standalone = "no" ?>
+
+<?xml-stylesheet type="text/css" href="format.css"?> 
+<book>
+    <book1>
+	
+        <name>HARRY POTTER - </name>
+        <author>(J.K.Rowling)</author>
+		<description>   If you want to escape the reality and jump into an imaginary world of magic , strart reading the book right away.</description>
+		<owner>Pooja Shri ,</owner>
+		<address>THIUPARANGUNDRAM ,</address>
+	        <rent>Rs 120</rent>	
+    </book1>
+    <book2>
+        <name>UNCONDITIONALLY - </name>
+        <author>(May)</author>
+		<description>   A story which portrays even if you are from a completely different world if right people are around you there is nothing called lonleiness</description>
+		<OWNER>MADURAI ,</OWNER>
+		<address>ByeepassRoad Kalavasal ,</address>
+	        <rent>Rs 100</rent>	
+    </book2>
+    <book3>
+        <name>Let us C - </name>
+        <author>(Yashavant)</author>
+		<description>   If you are a beginner or want to learn every kittke details about C , this book would help.</description>
+		<owner>Rajaram ,</owner>
+		<address>MAIN ROAD MADURAI ,</address>
+        <rent>Rs 80</rent>
+   </book3>
+   
+</book>
